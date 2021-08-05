@@ -1,0 +1,222 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SMS",
+		"_postman_id": "88f53851-deea-70f4-af68-433be1be5968",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/students/",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/students/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cbd446771c4aafbffbbabe90c9bc63840ab2f72b",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Student post",
+			"request": {
+				"url": "{{domain}}/api/students/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_first_name",
+							"value": "appuzz",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "12",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "reporting_teacher",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "student_last_name",
+							"value": "VK",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "POST"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete student",
+			"request": {
+				"url": "{{domain}}/api/students/3/",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "DELETE"
+			},
+			"response": []
+		},
+		{
+			"name": "{{domain}}/api/marks/",
+			"request": {
+				"url": "{{domain}}/api/marks/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "term",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mark",
+							"value": "40",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "POST"
+			},
+			"response": []
+		},
+		{
+			"name": "{{domain}}/api/marks/",
+			"request": {
+				"url": "{{domain}}/api/marks/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cbd446771c4aafbffbbabe90c9bc63840ab2f72b",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": "GET"
+			},
+			"response": []
+		},
+		{
+			"name": "{{domain}}/api/students/1/",
+			"request": {
+				"url": "{{domain}}/api/students/6/",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_first_name",
+							"value": "Appuzz",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "12",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "teacher",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "student_last_name",
+							"value": "VK",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "put"
+			},
+			"response": []
+		},
+		{
+			"name": "{{domain}}/api/marks/1/",
+			"request": {
+				"url": "{{domain}}/api/marks/1/",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mark",
+							"value": "26",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "PUT"
+			},
+			"response": []
+		},
+		{
+			"name": "{{domain}}/api/marks/5/",
+			"request": {
+				"url": "{{domain}}/api/marks/5/",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "DELETE"
+			},
+			"response": []
+		}
+	]
+}

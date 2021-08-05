@@ -1,0 +1,218 @@
+1)student list 
+
+method : GET 
+sample url : {{domain}}/api/students/
+
+{
+    "status_code": "200",
+    "status": true,
+    "message": "Students List",
+    "data": [
+        {
+            "id": 1,
+            "student_first_name": "Mark",
+            "student_last_name": "Antony",
+            "age": 12,
+            "gender": "1",
+            "reporting_teacher": 1,
+            "teacher": "Ancy Antony",
+            "gender_name": "Male"
+        },
+        {
+            "id": 2,
+            "student_first_name": "Hima",
+            "student_last_name": "S",
+            "age": 12,
+            "gender": "2",
+            "reporting_teacher": 1,
+            "teacher": "Ancy Antony",
+            "gender_name": "Female"
+        },
+        {
+            "id": 3,
+            "student_first_name": "Hema",
+            "student_last_name": "S",
+            "age": 12,
+            "gender": "2",
+            "reporting_teacher": 1,
+            "teacher": "Ancy Antony",
+            "gender_name": "Female"
+        },
+        {
+            "id": 4,
+            "student_first_name": "Shyam",
+            "student_last_name": "Mohan",
+            "age": 12,
+            "gender": null,
+            "reporting_teacher": 1,
+            "teacher": "Ancy Antony",
+            "gender_name": null
+        },
+        {
+            "id": 5,
+            "student_first_name": "Appu",
+            "student_last_name": "M",
+            "age": 12,
+            "gender": null,
+            "reporting_teacher": 1,
+            "teacher": "Ancy Antony",
+            "gender_name": null
+        },
+        {
+            "id": 6,
+            "student_first_name": "Appuzz",
+            "student_last_name": "VK",
+            "age": 12,
+            "gender": "1",
+            "reporting_teacher": 1,
+            "teacher": "Ancy Antony",
+            "gender_name": "Male"
+        }
+    ]
+}
+
+
+2) Student create 
+
+sample url :{{domain}}/api/students/ 
+method : POST
+sample response 
+
+{
+    "status_code": "201",
+    "status": true,
+    "message": "Student added successfully"
+}
+
+3) Student update 
+
+sample url : {{domain}}/api/students/1/
+method : PUT 
+
+sample response 
+
+{
+    "status_code": "200",
+    "status": true,
+    "message": "You have succesfully updated students details"
+}
+
+
+4) student delete 
+
+sample url : {{domain}}/api/students/3/
+method :DELETE
+
+{
+    "status_code": "200",
+    "status": true,
+    "message": "Student record deleted successfully"
+}
+
+
+
+
+
+5) student marks list 
+
+
+sample url : {{domain}}/api/marks/
+method : GET 
+sample response 
+{
+    "status_code": "200",
+    "status": true,
+    "message": "Mark List",
+    "data": [
+        {
+            "id": 1,
+            "name": "Mark Antony",
+            "total": 40,
+            "subject": "Maths",
+            "mark": 40,
+            "term": "1"
+        },
+        {
+            "id": 2,
+            "name": "Hima S",
+            "total": 63,
+            "subject": "Maths",
+            "mark": 26,
+            "term": "1"
+        },
+        {
+            "subject": "Science",
+            "mark": 22,
+            "term": "1"
+        },
+        {
+            "subject": "History",
+            "mark": 15,
+            "term": "1"
+        },
+        {
+            "id": 4,
+            "name": "Shyam Mohan",
+            "total": 25,
+            "subject": "Maths",
+            "mark": 25,
+            "term": "1"
+        }
+    ]
+}
+
+6)  add student mark list
+
+sample url : {{domain}}/api/marks/
+method : POST
+sample response :
+{
+    "status_code": "201",
+    "status": true,
+    "message": "Student Mark added successfully"
+}
+
+7)update student mark
+
+sample url : {{domain}}/api/marks/1/
+method : PUT
+
+{
+    "status_code": "200",
+    "status": true,
+    "message": "You have succesfully updated marks"
+}
+
+8)delete student mark
+sample url : {{domain}}/api/marks/5/
+method:DELETE
+sample response
+
+{
+    "status_code": "200",
+    "status": true,
+    "message": "Record deleted successfully"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
