@@ -1,6 +1,7 @@
 The first thing to do is to clone the repository:
 
 $ https://github.com/mahitmangal/sms.git
+
 $ cd project folder
 
 Create a virtual environment to install dependencies in and activate it:
